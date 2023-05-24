@@ -1,5 +1,5 @@
 * Projeto de uma Login-Page com foco mais no back-end: 
-    Tecnologias usadas: 
+    * Tecnologias usadas: 
         -  JavaScript
         -  NodeJS
         -  Express
