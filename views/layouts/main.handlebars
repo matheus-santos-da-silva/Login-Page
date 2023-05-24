@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <div>
+                <h1>Título</h1>
+            </div>
+            
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                {{#if session.userid}}
+                    <li>
+                    <a href="/logout">Sair</a>
+                    </li>
+                {{else}}
+                    <li>
+                    <a href="/auth/register">Registrar</a>
+                    </li>
+                     <li>
+                    <a href="/auth/login">Login</a>
+                    </li>
+                {{/if}}
+            </ul>
+        </div>
+    </header>
+
+    {{#if messages.message}}
+    <div class="flash-messages">
+        {{messages.message}}
+    </div>
+    {{/if}}
+
+    {{{body}}}
+</body>
+
+</html>
