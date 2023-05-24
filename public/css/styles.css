@@ -1,0 +1,155 @@
+*{
+    font-family: Helvetica;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+
+.container-form, .form-container-login, .form-container-logout {
+    border: 2px solid #CCC;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 400px;
+    height: 340px;
+}
+
+.container-form h2, .form-container-login h2, .form-container-logout h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 7px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    width: 80%;
+    gap: 4px;
+}
+
+.form-control input {
+    background-color: transparent;
+    border: 2px solid #CCC;
+    border-radius: 3px;
+    color: white;
+    padding: 5px;
+    width: 300px;
+}
+
+.submit {
+    width: 140px;
+    height: 30px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid #CCC;
+    border-radius: 5px;
+    color: #CCC;
+    transition: 0.4s;
+}
+
+.submit:hover {
+    cursor: pointer;
+    background-color: #CCC;
+    color: black;
+}
+
+
+.flash-messages {
+    width: 300px;
+    height: 30px;
+    font-size: 11px;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    text-transform: uppercase;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #CCC;
+    border-radius: 4px;
+    color: white;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    height: 60px;
+    color: white;
+    border-bottom: 2px solid #CCC;
+}
+
+.header-container h1 {
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.header-container ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-right: 28px;
+    list-style: none;
+}
+
+.header-container ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.home-title {
+    color: white;
+}
+
+.form-container-login {
+    height: 290px;
+}
+
+.form-container-logout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+}
+
+.form-container-logout form input {
+    margin-bottom: 25px;
+}
+
+.home-title {
+    margin-left: 20px;
+}
+
+.content {
+    color: white;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-container {
+    width: 700px;
+}
